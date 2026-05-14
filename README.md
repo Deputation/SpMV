@@ -1,6 +1,6 @@
 # SpMV on GPU Investigation (Deliverable #1)
 
-This repository contains the source code, build scripts, and execution environments for evaluating Sparse Matrix-Vector Multiplication (SpMV) kernels using COO and CSR storage formats. The benchmarks compare custom unoptimized and optimized GPU kernels against OpenMP CPU baselines and NVIDIA's cuSPARSE library.
+This repository contains the source code, build scripts, and execution environments for evaluating Sparse Matrix-Vector Multiplication (SpMV) kernels using COO and CSR storage formats. The benchmarks compare custom unoptimized and an optimized GPU kernel against OpenMP CPU baselines and NVIDIA's cuSPARSE library.
 
 ## Prerequisites
 
