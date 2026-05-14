@@ -48,14 +48,18 @@ The cluster scripts are pre-configured with SLURM directives (requesting the `ed
 
 If you are running this on a local workstation rather than a cluster, use the standard shell scripts:
 
-* **Benchmarks**: Run `./run_serial.sh` to execute the COO and CSR evaluations across the dataset sequentially.
-* **Matrix Info**: Run `./run_info.sh` to compute the structural properties of the matrices.
-* **Cache Profiling**: Run `./cache.sh` to execute the CPU baselines through Valgrind's `cachegrind` tool (currently targeted at `Ga41As41H72.mtx`).
+**Benchmarks**: Run `./run_serial.sh` to execute the COO and CSR evaluations across the dataset sequentially.
+
+**Matrix Info**: Run `./run_info.sh` to compute the structural properties of the matrices.
+
+**Cache Profiling**: Run `./cache.sh` to execute the CPU baselines through Valgrind's `cachegrind` tool (currently targeted at `Ga41As41H72.mtx`).
 
 ## Aggregating Results
 
 The benchmarking scripts output individual `.csv` files into the `results/` directory for each benchmarked kernel. To view the final consolidated data:
 
 **Benchmark Results**: You **must** run `./merge.sh` after your benchmarks finish. This script concatenates all the individual outputs from the `results/` folder and generates a single, clean `results.csv` file in the root directory. This file was used to generate all graphs in the report and contains all relevant information used to compare the algorithms.
+
+**Cache Study**: Cache results can be found in the ``logs`` folder, both in the form of summaries and as parsable ``.out`` files.
 
 **Matrix Information**: The structural metrics extracted by the info executable are automatically saved directly to `matrix_info.csv` in the root directory.
