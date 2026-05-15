@@ -21,6 +21,7 @@ Running on a local machine with a NVIDIA GPU.
 ./compile.sh
 ./run_serial.sh
 ./run_info.sh
+./cache.sh
 ./merge.sh
 ```
 The results.csv and matrix_info.csv files will be in the root folder. Cache studies will have their results for both COO and CSR algorithms in the ``logs`` folder.
