@@ -3,6 +3,7 @@
 This repository contains the source code, build scripts, and execution environments for evaluating Sparse Matrix-Vector Multiplication (SpMV) kernels using COO and CSR storage formats. The benchmarks compare custom unoptimized and an optimized GPU kernel against OpenMP CPU baselines and NVIDIA's cuSPARSE library.
 
 ## TLDR
+Please make sure the dataset is in place before running the following commands (see **Dataset Setup** section).
 ### SLURM Cluster
 Running on a configured SLURM Cluster using the partitions and nodes defined in the scripts:
 ```
