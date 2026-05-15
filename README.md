@@ -40,6 +40,8 @@ The dataset is **not** included in this repository. You must download the matric
 
 Create a directory named `dataset` in the root of the repository and extract the `.tar.gz` files directly into it. The parsing scripts expect a nested folder structure where each matrix has its own directory.
 
+The ``run_parallel_cluster.sh`` script can be inspected to find the list of matrices used.
+
 **Expected Structure:**
 ```text
 SpMV/
