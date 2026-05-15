@@ -13,7 +13,7 @@ sbatch run_info_cluster.sh
 # WAIT FOR ALL JOBS TO FINISH, THEN RUN
 ./merge.sh
 ```
-The results.csv and matrix_info.csv files will be in the root folder.
+The results.csv and matrix_info.csv files will be in the root folder. Cache studies will have their results for both COO and CSR algorithms in the ``logs`` folder.
 
 ### Local Machine
 Running on a local machine with a NVIDIA GPU.
@@ -23,7 +23,7 @@ Running on a local machine with a NVIDIA GPU.
 ./run_info.sh
 ./merge.sh
 ```
-The results.csv and matrix_info.csv files will be in the root folder.
+The results.csv and matrix_info.csv files will be in the root folder. Cache studies will have their results for both COO and CSR algorithms in the ``logs`` folder.
 
 ## Prerequisites
 
