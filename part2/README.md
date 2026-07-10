@@ -75,7 +75,7 @@ The provided CPU baseline is built and run from a different directory:
 
 ```bash
 cd multiGPU-SpMV
-make
+./compile.sh
 ./cluster_cpu_baseline.sh
 ```
 
