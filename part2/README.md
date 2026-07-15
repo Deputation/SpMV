@@ -108,6 +108,15 @@ real_matrices_info.csv
 synthetic_matrices_info.csv
 ```
 
+## Graphing
+The script ``graphing/generate.sh`` generates the various graphs used in the report.
+
+Its first parameter must be the path to the root folder containing part2 with the results computed on disk.
+
+Its second parameter must be the path to the merged CPU baseline csv.
+
+Install the dependencies listed in the ``requirements.txt`` file in a virtual environment before running the generation script.
+
 ## Notes
 
 The MPI benchmark uses the matrix lists in `matrices.sh`.
